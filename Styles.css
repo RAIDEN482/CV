@@ -1,0 +1,510 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+header {
+    text-align: center;
+    padding: 10px;
+}
+
+.profile-picture img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.skill-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.skill-item p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.academic-skills {
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 0;
+    list-style-type: none;
+}
+
+.academic-skills li {
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f8f8f8;
+}
+
+.container {
+    display: flex;
+}
+
+header {
+    background-color: #333;
+    color: rgb(235, 235, 235);
+    padding: 1em;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-picture img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 1em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    background-color: transparent; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: white; 
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a.active {
+    background-color: rgb(107, 88, 88); 
+    color: black; 
+}
+
+nav ul li a:hover {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); 
+}
+
+main {
+    padding: 2em;
+    width: 100%;
+    max-width: 1200px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.job {
+    border: 1px solid #ddd;
+    padding: 1em;
+    margin-bottom: 1em;
+    background-color: #b89b9b;
+}
+
+.job h3 {
+    margin-top: 0;
+}
+
+.job p, .job ul {
+    margin: 0.5em 0;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    list-style-type: square;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.skill img, .personal-skills img {
+    width: 90px; 
+    height: 90px;
+    margin-right: 20px;
+    object-fit: contain;
+}
+
+.skill label {
+    flex: 1;
+    margin-right: 10px;
+    text-align: right;
+    color: white;
+}
+
+.progress-bar {
+    flex: 3;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    position: relative;
+    height: 20px;
+}
+
+.progress {
+    background-color: rgb(221, 212, 212);
+    height: 100%;
+    border-radius: 5px;
+    transition: width 0.3s ease;
+    color: rgb(37, 33, 33);
+    text-align: center;
+    line-height: 20px;
+}
+
+.personal-skills {
+    list-style: none;
+    padding: 0;
+}
+
+.personal-skills li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: rgb(37, 33, 33);
+}
+
+.personal-skills img {
+    width: 90px; 
+    height: 90px;
+    margin-right: 10px;
+    object-fit: contain;
+}
+
+.personal-skills strong {
+    font-weight: bold;
+}
+
+#academic-skills {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#academic-skills h2 {
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.academic-skills-list {
+    list-style: square;
+    padding-left: 20px;
+    font-size: 1.1em;
+    color: #333;
+    line-height: 1.8;
+}
+
+.academic-skills-list li {
+    margin-bottom: 10px;
+}
+
+.academic-skills-list li strong {
+    color: #000;
+    font-weight: bold;
+}
+
+#education {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+#education h2 {
+    text-align: center; 
+    font-size: 2em; 
+    font-weight: bold;
+    margin-bottom: 20px; 
+    color: #333;
+}
+
+.education-container { 
+    display: flex; 
+    flex-direction: column;
+    gap: 20px; 
+    align-items: center;
+}
+
+.education-box {
+    width: 80%;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.education-box h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    color: #0073e6;
+}
+
+.education-box p {
+    font-size: 1em;
+    color: #555;
+    margin: 5px 0;
+}
+
+.education-box p strong {
+    color: #333;
+    font-weight: bold;
+}
+
+ul li i {
+    margin-right: 10px;
+    color: rgba(255, 255, 255, 0.2); 
+}
+
+#experience {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+#experience h2 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.experience-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.experience-box {
+    width: 80%;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.experience-box h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    color: #0073e6;
+}
+
+.experience-box p, .experience-box ul {
+    font-size: 1em;
+    color: #555;
+    margin: 5px 0;
+}
+
+.experience-box p strong {
+    color: #333;
+    font-weight: bold;
+}
+
+.experience-box ul {
+    padding-left: 20px;
+}
+
+.experience-box ul li {
+    list-style-type: square;
+}
+
+.skill:hover {
+
+    transform: scale(1.05);
+    transition: transform 0.2s;
+}
+
+.progress-bar {
+    flex: 3;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    position: relative;
+    height: 20px;
+}
+
+.progress {
+    background-color: rgb(67, 67, 99);
+    height: 100%;
+    border-radius: 5px;
+    transition: width 0.3s ease;
+}
+
+.content-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.description-panel {
+    width: 50%;
+    padding: 1em;
+}
+
+.large-picture img {
+    width: 100%;
+    max-width: 400px;
+    object-fit: cover;
+}
+
+footer {
+    text-align: center;
+    padding: 0.5em 0;
+    background-color: #333;
+    color: rgb(204, 159, 159);
+    width: 100%;
+    font-size: 0.8em;
+    margin-top: auto;
+}
+
+#references {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+#references h2 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.references-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.reference-box {
+    width: 80%;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reference-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.reference-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.reference-box h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    color: #0073e6;
+}
+
+.reference-box p {
+    font-size: 1em;
+    color: #555;
+    margin: 5px 0;
+}
+
+.reference-box p strong {
+    color:#0073e6;
+    font-weight: bold;
+}
+
+.reference-box a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+.reference-box a:hover {
+    text-decoration: underline;
+}
+
+.social-media a {
+    color: rgb(204, 159, 159);
+    margin: 0 0.5em;
+    text-decoration: none;
+}
